@@ -1,0 +1,443 @@
+/*
+Theme Name: Novatec
+Theme URI: https://ctnovatec.com.br/
+Author: Curso de desenvolvimento de Sites e Blogs com Wordpress
+Author URI: https://ctnovatec.com.br/
+Description: Tema do projeto do curso de Desenvolvimento de sites e blogs com Wordpress
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: novatec, cursos, blog, tecnologia, editora, livros
+Text Domain: novatec
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/************ REGRAS GERAIS *************/
+
+body{
+	font-family: "Arial";
+	text-align: center;
+}
+
+.wrapper{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+#content{
+	overflow: hidden;
+	text-align: justify;
+}
+
+#content p{
+	margin:20px 0;
+}
+#content a{
+	color:#000000;
+}
+
+/************ HEADER *************/
+
+header{
+	background: #1B1812;
+	border-top:18px solid #F0C200;
+	margin-bottom:25px;
+	text-align: center;
+}
+header .wrapper_menu{
+	background: #F0C200;
+}
+header #main_menu{
+	display: table;
+	height: 50px;
+	table-layout: fixed;
+	width:100%;
+}
+header #main_menu li{
+	display: table-cell;
+	line-height: 41px;
+    padding-bottom: 7px;
+	text-align: center;	
+}
+header #main_menu li a{
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	color:#000000;
+	font-size:12px;
+	padding:15px;
+	text-decoration: none;
+}
+header #main_menu li.current-menu-item a{
+	background: #FFFFFF;
+}
+/************ HOME ***************/
+.home_upper{
+	overflow: hidden;
+}
+#home_content{
+	float:left;
+}
+#ultimos_posts{
+	float:right;
+	width:510px;
+}
+#ultimos_posts li{
+	font-size:12px;
+	padding:15px;
+}
+#ultimos_posts li.impar{
+	background: #E2E2E2;
+}
+#ultimos_posts li a{
+	text-decoration: none;
+}
+#ultimos_posts li a h2{
+	font-size:14px;
+	margin:0 0 10px;
+}
+
+
+/************ BLOG ***************/
+
+.post_entry{
+	border-bottom:1px solid #464646;
+	margin-bottom:30px;
+	padding-bottom:30px;
+}
+#content h2{
+	font-size:24px;
+	font-weight: bold;
+	margin-bottom:30px;
+	text-transform: uppercase;
+}
+.post_entry .post_date{
+	color:#F0C200;
+	font-size:13px;
+	font-weight: bold;
+}
+
+#blog_content{
+	float:left;
+	width: 75%;
+}
+
+/************* SIDEBAR ************/
+
+#blog_sidebar{
+	float:right;
+	width: 23%;
+}
+#blog_sidebar li{
+	background: #E2E2E2;
+}
+#blog_sidebar li h2{
+	background: #F0C200;
+	color:#FFF;
+	font-size:14px;
+	font-weight: bold;
+	margin:0 0 10px;
+	padding:10px;
+	text-align: center;
+}
+#blog_sidebar li form{
+	padding:10px;
+}
+#blog_sidebar li ul{
+	padding:10px;
+}
+#blog_sidebar .widget_search form{
+
+}
+#blog_sidebar .widget_search form input{
+	padding:5px;
+}
+#blog_sidebar .widget_search form input[type='submit']{
+	background: #F0C200;
+	border:none;
+	color:#FFF;
+	font-weight: bold;
+	padding:5px 10px;
+}
+
+/************ 404 *************/
+
+#error_page{
+	font-weight: bold;
+	margin: 20px auto;
+	overflow: hidden;
+	text-align: left;
+	width:440px;
+}
+#error_page h2{
+	color:#F0C200;
+	float:left;
+	font-size:85px;
+	margin-right:20px;
+}
+#error_page .right_side{
+	float: right;
+}
+#error_page .right_side p{
+	font-size:20px;
+	margin-top:0;
+}
+#error_page .right_side a{
+	background: #F0C200;
+	color:#FFF;
+	display: block;
+	font-size:18px;
+	padding:10px 0;
+	text-align: center;
+	text-decoration: none;
+	width:100%;
+}
+
+/************ FORMS **************/
+form.wpcf7-form,
+form.comment-form{
+
+}
+form.wpcf7-form label,
+form.comment-form label{
+	float:left;
+	font-weight: bold;
+	width:200px;
+}
+form.wpcf7-form input,
+form.comment-form input,
+form.wpcf7-form textarea,
+form.comment-form textarea{
+	border:1px solid #1B1812;
+	padding:5px;
+	width:400px;
+}
+form.wpcf7-form input[type='button'],
+form.comment-form input[type='button'],
+form.wpcf7-form input[type='submit'],
+form.comment-form input[type='submit']{
+	background: #F0C200;
+	border:none;
+	color:#FFF;
+	cursor:pointer;
+	font-weight: bold;
+	padding:10px 20px;
+	width:auto;
+}
+
+/************ COMENTÁRIOS *************/
+
+.commentlist{
+	margin:20px 0;
+}
+
+.commentlist li{
+	border-bottom:1px solid #1B1812;
+	margin:20px 0;
+	padding:20px 0;
+}
+.commentlist li .comment-author{
+    line-height: 35px;
+    margin-bottom:10px;
+	overflow: hidden;
+}
+.commentlist li .commentmetadata{
+	margin:10px 0;
+}
+.commentlist li .comment-author img{
+	float:left;
+	margin-right:10px;
+}
+
+/************ FOOTER *************/
+
+footer{
+	margin-top:40px;	
+}
+footer .above{
+	background: #1B1812;
+	color:#FFFFFF;
+}
+footer .above ul{
+	overflow: hidden;
+}
+footer .above ul li{
+	float:left;
+	margin-left:10px;
+	padding:60px 0;
+	text-align: left;
+	width:370px;
+}
+footer .above ul li:first-child{
+	margin-left: 0;
+}
+footer .above ul li h2{
+	color:#F0C200;
+	font-weight: bold;
+	margin-bottom:10px;
+}
+footer .above .wpcf7-form{
+	font-weight: bold;
+	margin:10px 0;
+}
+footer .above .wpcf7-form input{
+	margin-bottom:25px;
+	margin:5px 0;
+	padding:5px;
+	width:300px;
+}
+footer .above .wpcf7-form input[type='submit']{
+	background: #F0C200;
+	border:none;
+	color:#000;
+	cursor:pointer;
+	margin:15px 0;
+	padding:10px 30px;
+	width:auto;
+}
+footer .bellow{
+	background: #F0C200;
+	padding: 15px 0;
+	text-align: center;
+}
+footer .bellow p{
+	font-weight: bold;
+}
+footer .bellow small{
+	font-size:10px;
+}
+footer .bellow small a{
+	color:#000000;
+	text-decoration: none;
+}
+
+/***************** CURSOS ********************/
+
+.cursos{
+	clear: both;
+	margin:20px 0;
+}
+.cursos li.box_curso{
+	float: left;
+	margin-left:80px;
+	width:170px;
+}
+.cursos li.box_curso:first-child{
+	margin-left: 0;
+}
+.cursos li.box_curso h2{
+	border-bottom:1px solid #000;
+	font-size:14px!important;
+	margin-bottom:20px;
+	padding-bottom:20px;
+}
+.cursos li.box_curso h2,
+.cursos li.box_curso p{
+	line-height: 18px;
+}
+.cursos li.box_curso p{
+	font-size:12px;
+}
+.cursos li.box_curso h2 span{
+	color :#EDC440;
+	display: block;
+	font-weight: bold;
+}
+.cursos li.box_curso .data{
+	color:#F0C200;
+	font-weight: bold;
+	text-align: center;
+}
+.cursos li.box_curso a{
+	color:#000;
+	text-decoration: none;
+}
+
+.navigation.pagination .screen-reader-text{
+	display: none;
+}
+
+.navigation.pagination{
+	margin:20px 0;
+}
+.navigation.pagination a,
+.navigation.pagination span{
+	background: #F0C200;
+	color:#FFF!important;
+	padding:10px;
+	text-decoration: none;
+}
+.navigation.pagination span.page-numbers.current{
+	background: none;
+	color:#F0C200!important;
+	font-weight: bold;
+}
+
+/****************** SIDEBAR ******************/
+
+h2.widgettitle{
+	margin: 0 0 10px;
+}
+
+/****************** INSTRUTORES ******************/
+
+.instrutores{
+
+}
+
+.instrutores li{
+	margin:10px 0;
+	overflow: hidden;
+	padding:10px 0;
+}
+.instrutores li img{
+	border-radius: 75px;
+	float:left;
+	margin-right:20px;
+}
