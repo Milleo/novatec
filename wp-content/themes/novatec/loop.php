@@ -5,8 +5,9 @@
 
 if(have_posts()):
 	while(have_posts()): the_post();
-		echo "<div class='post_entry'>";
+		echo "<article>";
 		echo "<h2><a href='".get_the_permalink()."'>".get_the_title()."</a></h2>";
+		echo "<div class='post_date'>Postado em ".get_the_date()."</div>";
 		
 		if(has_post_thumbnail()):
 			the_post_thumbnail('meu_thumbnail');
@@ -14,8 +15,7 @@ if(have_posts()):
 
 		the_content();
 
-		echo "<div class='post_date'>Postado em ".get_the_date()."</div>";
-		echo "</div>";
+		echo "</article>";
 	endwhile;
 
 	# Paginação das postagens, especificando quantos links devem aparecer antes

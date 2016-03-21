@@ -5,7 +5,7 @@
 # Função para desclaração do Post Type
 function create_curso(){
 	register_post_type(
-		'curso', # Nome do post type
+		'curso', 									# Nome do post type
 		array(
 			'labels' => array( 						# Labels para o admin
 				'name' => 'Cursos', 

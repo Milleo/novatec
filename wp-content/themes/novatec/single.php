@@ -7,15 +7,17 @@ get_header();
 echo "<div id='blog_content'>";
 
 if(have_posts()):
+	echo "<article>";
 
 	the_post();
 	
 	the_title('<h2>', '</h2>');
-	the_content();
 	echo "<div class='post_date'>Postado em ".get_the_date()."</div>";
-
+	the_content();
+	
 	comments_template();
 
+	echo "</article>";
 endif;
 
 echo "</div>";

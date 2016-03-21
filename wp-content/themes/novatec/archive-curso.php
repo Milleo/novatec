@@ -1,5 +1,6 @@
 <?php
-	# Archive de cursos
+
+# Archive de cursos
 
 	get_header();
 ?>
